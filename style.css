@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Buttons */
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#addBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#saveBtn {
+    background: #2196F3;
+    color: white;
+}
+
+#refreshBtn {
+    background: #ff9800;
+    color: white;
+}
+
+.deleteBtn {
+    background: #f44336;
+    color: white;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+td {
+    background: #fafafa;
+}
+
+td[contenteditable="true"] {
+    background: #fffde7;
+}
+
+/* Hover effect */
+tr:hover td {
+    background: #f1f1f1;
+}
