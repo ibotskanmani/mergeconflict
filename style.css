@@ -61,6 +61,7 @@ button:hover {
     color: white;
 }
 
+
 /* Table */
 table {
     width: 100%;
@@ -90,4 +91,42 @@ td[contenteditable="true"] {
 /* Hover effect */
 tr:hover td {
     background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        width:95%;
+        padding:10px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .button-box{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .button-box button{
+        width:100%;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    th,td{
+        padding:8px;
+        font-size:14px;
+    }
+}
+
+.table-container{
+    width: 100%;
+    overflow-x: auto;
 }

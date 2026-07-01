@@ -22,49 +22,49 @@
         <button id="saveBtn" onclick="saveData()">Save</button>
         <button id="refreshBtn" onclick="loadData()">Refresh</button>
     </div>
+    <div class="table-container">
+        <table id="employeeTable" border="2">
 
-    <table id="employeeTable" border="2">
+            <thead>
 
-        <thead>
+                <tr>
 
-            <tr>
+                    <th>Serial No</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                    <th>Action</th>
 
-                <th>Serial No</th>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Designation</th>
-                <th>Salary</th>
-                <th>Action</th>
+                </tr>
 
-            </tr>
+            </thead>
 
-        </thead>
+            <tbody id="tableBody">
 
-        <tbody id="tableBody">
+                <tr>
 
-            <tr>
+                    <td contenteditable="true">1</td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td>
+                        <button class="deleteBtn"
+                                onclick="deleteRow(this)">
+                            Delete
+                        </button>
 
-                <td contenteditable="true">1</td>
-                <td contenteditable="true"></td>
-                <td contenteditable="true"></td>
-                <td contenteditable="true"></td>
-                <td contenteditable="true"></td>
-                <td contenteditable="true"></td>
-                <td>
+                    </td>
 
-                    <button class="deleteBtn"
-                            onclick="deleteRow(this)">
-                        Delete
-                    </button>
+                </tr>
 
-                </td>
+            </tbody>
 
-            </tr>
-
-        </tbody>
-
-    </table>
+        </table>
+    </div>
 
 </div>
 
